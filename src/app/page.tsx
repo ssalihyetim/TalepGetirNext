@@ -47,7 +47,7 @@ export default function HomePage() {
                   size="xxl"
                   variant="primary"
                   icon={<Gift className="w-8 h-8" />}
-                  className="bg-white text-brand-blue hover:bg-gray-100 hover:scale-105"
+                  className="bg-red-600 text-white hover:bg-red-700 hover:scale-105"
                 >
                   ÜCRETSİZ SİZE ÖZEL STRATEJİ DOSYASI OLUŞTURALIM
                 </CtaButton>
@@ -424,6 +424,65 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Mini CTA Section */}
+      <section className="py-16 lg:py-20 bg-red-600 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+        </div>
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-4xl mx-auto text-center">
+            <ScrollReveal delay={0.1}>
+              <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
+                <Target className="w-5 h-5 mr-2 text-yellow-300" />
+                <span className="text-sm font-medium text-white">Hemen Başlayın - Sadece 2 Dakika</span>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.3}>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-white">
+                Size Özel Strateji Dosyanız<br />
+                <span className="text-yellow-300">24 Saat İçinde Hazır!</span>
+              </h2>
+            </ScrollReveal>
+            
+            <ScrollReveal delay={0.5}>
+              <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+                Formu doldurduktan sonra uzmanlarımız size özel <strong>ücretsiz strateji dosyası</strong> hazırlayacak
+              </p>
+            </ScrollReveal>
+            
+            <ScrollReveal delay={0.7}>
+              <div className="mb-8">
+                <CtaButton 
+                  href="/strateji-dosyasi" 
+                  size="xxl"
+                  variant="primary"
+                  icon={<Gift className="w-8 h-8" />}
+                  className="bg-white text-red-600 hover:bg-gray-100 hover:scale-105 shadow-2xl"
+                >
+                  ÜCRETSİZ STRATEJİ DOSYASI OLUŞTURALIM
+                </CtaButton>
+              </div>
+            </ScrollReveal>
+
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-white/80">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-300" />
+                <span>Hiçbir ödeme istemiyoruz</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-300" />
+                <span>24 saat içinde hazır</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-300" />
+                <span>Size özel hazırlanıyor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Social Proof Section */}
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -611,7 +670,7 @@ export default function HomePage() {
                   size="xxl"
                   variant="primary"
                   icon={<Zap className="w-8 h-8" />}
-                  className="mb-6 bg-white text-brand-blue hover:bg-gray-100 hover:scale-105"
+                  className="mb-6 bg-red-600 text-white hover:bg-red-700 hover:scale-105"
                 >
                   ÜCRETSİZ STRATEJİ DOSYASI OLUŞTURALIM
                 </CtaButton>
