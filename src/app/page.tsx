@@ -441,7 +441,7 @@ export default function HomePage() {
             <ScrollReveal delay={0.3}>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-white">
                 Size Özel Strateji Dosyanız<br />
-                <span className="text-yellow-300">24 Saat İçinde Hazır!</span>
+                <span className="text-yellow-300">72 Saat İçinde Hazır!</span>
               </h2>
             </ScrollReveal>
             
@@ -472,7 +472,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-green-300" />
-                <span>24 saat içinde hazır</span>
+                <span>72 saat içinde hazır</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-green-300" />
@@ -659,7 +659,7 @@ export default function HomePage() {
             <ScrollReveal delay={0.5}>
               <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
                 Sadece <strong className="text-yellow-200">2 dakika</strong> sürecek formla başlayın, 
-                <strong className="text-green-200"> 24 saat içinde</strong> size özel strateji dosyanız hazır olsun.
+                <strong className="text-green-200"> 72 saat içinde</strong> size özel strateji dosyanız hazır olsun.
               </p>
             </ScrollReveal>
             

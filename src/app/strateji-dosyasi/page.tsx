@@ -6,7 +6,7 @@ import { Header } from "@/components/layout/header"
 
 export const metadata = {
   title: 'Ücretsiz Strateji Dosyası - TalepGetir',
-  description: 'Size özel ihracat strateji dosyanızı oluşturalım. 24 saat içinde hazır, tamamen ücretsiz.',
+  description: 'Size özel ihracat strateji dosyanızı oluşturalım. 72 saat içinde hazır, tamamen ücretsiz.',
 }
 
 export default function StrategyFormPage() {
@@ -28,7 +28,7 @@ export default function StrategyFormPage() {
             </h1>
             
             <p className="text-xl md:text-2xl text-brand-gray mb-8 max-w-3xl mx-auto">
-              Bu bilgiler ile <strong className="text-brand-blue">24 saat içinde</strong> size özel strateji dosyanızı hazırlıyoruz
+              Bu bilgiler ile <strong className="text-brand-blue">72 saat içinde</strong> size özel strateji dosyanızı hazırlıyoruz
             </p>
 
             {/* Enhanced Trust Indicators */}
@@ -40,7 +40,7 @@ export default function StrategyFormPage() {
               </div>
               <div className="flex flex-col items-center gap-2 bg-blue-50 p-4 rounded-xl border border-blue-200">
                 <Clock className="w-8 h-8 text-blue-600" />
-                <span className="font-semibold text-blue-700">24 Saat İçinde</span>
+                <span className="font-semibold text-blue-700">72 Saat İçinde</span>
                 <span className="text-xs text-blue-600">Hızlı Teslimat</span>
               </div>
               <div className="flex flex-col items-center gap-2 bg-purple-50 p-4 rounded-xl border border-purple-200">

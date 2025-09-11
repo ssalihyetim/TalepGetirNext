@@ -15,7 +15,7 @@ import { Header } from "@/components/layout/header"
 
 export const metadata = {
   title: 'Teşekkürler - Strateji Dosyanız Hazırlanıyor | TalepGetir',
-  description: 'Strateji dosyanız 24 saat içinde hazır olacak. Şimdi bir toplantı rezervasyonu yaparak sürecimizi hızlandırın.',
+  description: 'Strateji dosyanız 72 saat içinde hazır olacak. Şimdi bir toplantı rezervasyonu yaparak sürecimizi hızlandırın.',
 }
 
 export default function ThankYouPage() {
@@ -45,7 +45,7 @@ export default function ThankYouPage() {
             <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <Clock className="w-6 h-6 text-blue-500 mx-auto mb-2" />
-                <p className="text-sm text-gray-600">24 saat içinde</p>
+                <p className="text-sm text-gray-600">72 saat içinde</p>
                 <p className="font-semibold text-gray-800">Dosya hazır</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-sm">
@@ -104,7 +104,7 @@ export default function ThankYouPage() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-sm text-brand-charcoal">
-                          24 saat içinde
+                          72 saat içinde
                         </h4>
                         <p className="text-sm text-brand-gray">
                           Size özel strateji dosyanız e-posta adresinize gelecek

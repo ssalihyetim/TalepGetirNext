@@ -46,18 +46,47 @@ export function StrategyForm() {
     setIsSubmitting(true)
     
     try {
-      // Here you would typically send the data to your API
-      // For now, we'll simulate the API call
-      await new Promise(resolve => setTimeout(resolve, 2000))
-      
+      // Send form data to API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.message || 'Form submission failed')
+      }
+
       // Store form data in sessionStorage for the thank you page
       sessionStorage.setItem('formData', JSON.stringify(data))
       
+      // Store email results for display on thank you page
+      if (result.emailResults) {
+        sessionStorage.setItem('emailResults', JSON.stringify(result.emailResults))
+      }
+
+      // Show warning if emails failed but form was submitted
+      if (result.warning) {
+        console.warn('Email warning:', result.warning)
+        // You could show a toast notification here
+      }
+
       // Redirect to thank you page
       router.push('/tesekkurler')
     } catch (error) {
       console.error('Form submission error:', error)
-      // Handle error - you might want to show a toast or error message
+      
+      // Set form-level error
+      form.setError('root', {
+        type: 'manual',
+        message: error instanceof Error 
+          ? error.message 
+          : 'Bir hata oluştu. Lütfen tekrar deneyin.',
+      })
     } finally {
       setIsSubmitting(false)
     }
@@ -209,6 +238,15 @@ export function StrategyForm() {
             </FormItem>
           )}
         />
+
+        {/* Form Error Display */}
+        {form.formState.errors.root && (
+          <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+            <p className="text-red-700 text-sm font-medium">
+              {form.formState.errors.root.message}
+            </p>
+          </div>
+        )}
 
         <div className="pt-4">
           <Button

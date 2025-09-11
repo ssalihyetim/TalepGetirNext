@@ -476,7 +476,7 @@ export default function UrgancıogluOfferPage() {
         )}
 
 
-        {/* CTA Section */}
+        {/* CTA Section - Force Deploy */}
         <section className="text-center py-16 bg-[#1A2B4C] rounded-2xl text-white mt-16">
           <h2 className="text-3xl font-bold mb-4">
             Urgancıoğlu'nun Büyüme Hikayesini Birlikte Yazalım
