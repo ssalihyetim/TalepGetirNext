@@ -421,11 +421,11 @@ export default function UrgancıogluOfferPage() {
                     <div className="bg-white/70 p-4 rounded-lg border border-[#10B981]/20">
                       <h4 className="font-semibold text-[#1A2B4C] mb-2">3. Revenue Share</h4>
                       <div className="text-center mb-2">
-                        <div className="text-2xl font-bold text-[#1A2B4C]">%2</div>
+                        <div className="text-2xl font-bold text-[#1A2B4C]">%3.5</div>
                         <div className="text-sm text-[#6B7280]">1 yıllık satışlardan</div>
                       </div>
                       <p className="text-[#6B7280] text-sm">
-                        Closed deal'lar için 1 yıllık satışlardan %2 Revenue Share talep edilir.
+                        Closed deal'lar için 1 yıllık satışlardan %3.5 Revenue Share talep edilir.
                       </p>
                     </div>
                   </div>
@@ -464,7 +464,7 @@ export default function UrgancıogluOfferPage() {
                     </a>
                     <div className="text-center">
                       <p className="text-sm text-[#6B7280]">
-                        Toplam Yatırım: €5,600 (4 ay) + %2 revenue share başarılı satışlardan
+                        Toplam Yatırım: €5,600 (4 ay) + %3.5 revenue share başarılı satışlardan
                       </p>
                     </div>
                   </div>

@@ -298,8 +298,8 @@ export function UrgancıogluForm() {
             <Checkbox
               id="hasApprovedBudget"
               checked={form.watch('hasApprovedBudget')}
-              onCheckedChange={(checked) => 
-                form.setValue('hasApprovedBudget', checked as boolean)
+              onCheckedChange={(checked: boolean) => 
+                form.setValue('hasApprovedBudget', checked)
               }
             />
             <Label htmlFor="hasApprovedBudget" className="text-[#6B7280] text-sm">
@@ -324,8 +324,8 @@ export function UrgancıogluForm() {
             <Checkbox
               id="dataConsent"
               checked={form.watch('dataConsent')}
-              onCheckedChange={(checked) => 
-                form.setValue('dataConsent', checked as boolean)
+              onCheckedChange={(checked: boolean) => 
+                form.setValue('dataConsent', checked)
               }
             />
             <Label htmlFor="dataConsent" className="text-[#6B7280] text-sm leading-relaxed">
