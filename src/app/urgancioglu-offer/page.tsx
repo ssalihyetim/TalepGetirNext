@@ -20,7 +20,7 @@ export default function UrgancıogluOfferPage() {
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Urgancıoğlu İçin Özel Geliştirilmiş<br />
-              <span className="text-[#F59E0B]">Hiper-Kişiselleştirilmiş Outreach</span>
+              <span className="text-[#F59E0B]">Hiper-Kişiselleştirilmiş Doğrudan İletişim</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Bitkisel tabaklanmış deri üreticiniz için özel olarak tasarlanmış, 
@@ -61,20 +61,20 @@ export default function UrgancıogluOfferPage() {
             {/* What We Do */}
             <section>
               <h2 className="text-3xl font-bold text-[#1A2B4C] mb-8 text-center">
-                Urgancıoğlu İçin Neler Yapıyoruz?
+                Urgancıoğlu İçin Neler Yapabiliriz?
               </h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-3 gap-6">
                 <Card className="border-[#E2E8F0] hover:border-[#1A2B4C] transition-colors">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2 text-[#1A2B4C]">
                       <Globe className="w-5 h-5 text-[#F59E0B]" />
-                      Premium Ayakkabı Markaları
+                      Premium Ayakkabı Üreticileri
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-[#6B7280]">
-                      Allen Edmonds, Alden, Tricker's gibi premium ayakkabı markalarına 
-                      bitkisel tabaklanmış derinizin sürdürülebilirlik avantajları ile ulaşım.
+                      Premium ayakkabı ve aksesuar markalarının üreticilerine 
+                      kişiselleştirilmiş erişim ile ulaşmak, toplantı ve teklif talepleri alacağız.
                     </p>
                   </CardContent>
                 </Card>
@@ -82,13 +82,27 @@ export default function UrgancıogluOfferPage() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2 text-[#1A2B4C]">
                       <Target className="w-5 h-5 text-[#F59E0B]" />
-                      Lüks Deri Ürünleri
+                      Sürdürülebilirlik Odaklı Markalar
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-[#6B7280]">
-                      Hermès, Bottega Veneta benzeri lüks markalar için sürdürülebilir 
-                      deri çözümleri ve doğal patina geliştirme avantajları.
+                      Çevre dostu ürünlere odaklanan markaları hedefleyerek 
+                      bitkisel tabaklamanın doğal ve kromsuz avantajlarını öne çıkaracağız.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="border-[#E2E8F0] hover:border-[#1A2B4C] transition-colors">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-[#1A2B4C]">
+                      <Zap className="w-5 h-5 text-[#F59E0B]" />
+                      Artisan & Luxury Brands
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-[#6B7280]">
+                      El yapımı ve lüks ürün segmentindeki markaları hedefleyerek 
+                      doğal patina geliştirme özelliklerini vurgulayacağız.
                     </p>
                   </CardContent>
                 </Card>
@@ -140,9 +154,9 @@ export default function UrgancıogluOfferPage() {
                         Başarı Garantisi
                       </h3>
                       <p className="text-[#6B7280] leading-relaxed">
-                        Üzerinde anlaştığımız performans hedeflerine ulaşana kadar tam hizmet ücretini 
-                        talep etmiyoruz. Eğer hedefler karşılanmazsa, kalan bakiye tahsil edilmez. 
-                        Bu, yatırımınızın doğrudan somut sonuçlara bağlı olmasını sağlar.
+                        Hedefe ulaşamazsak, ulaşamadığımız ölçüde ücret iadesi yapıyoruz. 
+                        Belirlenen performans hedeflerini karşılayamadığımız durumda, 
+                        eksik kalan sonuçlar oranında ödeme iadesi garantisi sunuyoruz.
                       </p>
                     </div>
                   </div>
