@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Mail, Target, TrendingUp, Globe, Zap } from "lucide-react";
 import { useState } from "react";
-import Link from "next/link";
 
 export default function UrgancıogluOfferPage() {
   const [activeTab, setActiveTab] = useState('overview');

@@ -71,8 +71,9 @@ export function UrgancıogluForm() {
       }
 
       // Track form submission
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'urgancioglu_form_submit', {
+      if (typeof window !== 'undefined' && 'gtag' in window) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (window as any).gtag('event', 'urgancioglu_form_submit', {
           event_category: 'form',
           event_label: data.packageType,
           value: data.packageType === 'enterprise' ? 5000 : 3000
