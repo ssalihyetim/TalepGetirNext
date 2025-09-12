@@ -467,12 +467,12 @@ export default function UrgancıogluOfferPage() {
 
                   <div className="pt-4 space-y-3">
                     <a 
-                      href="https://wa.me/905326638379?text=Abi%20OK'ledik" 
+                      href="https://wa.me/905326638379?text=İhracat%20yapmak%20istiyorum" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="block"
                     >
-                      <Button className="w-full bg-[#10B981] hover:bg-[#059669] text-white" size="lg">
+                      <Button className="w-full bg-red-600 hover:bg-red-700 text-white" size="lg">
                         Hemen Başlayalım
                       </Button>
                     </a>
@@ -501,11 +501,11 @@ export default function UrgancıogluOfferPage() {
           </p>
           <div className="flex justify-center">
             <a 
-              href="https://wa.me/905326638379?text=Abi%20OK'ledik" 
+              href="https://wa.me/905326638379?text=İhracat%20yapmak%20istiyorum" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="bg-[#F59E0B] hover:bg-[#D97706] text-white px-8">
+              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 w-full sm:w-auto">
                 Hemen Başlayalım
               </Button>
             </a>
