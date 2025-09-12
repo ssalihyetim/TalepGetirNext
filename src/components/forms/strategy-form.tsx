@@ -21,7 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { strategyFormSchema, type StrategyFormData, salesTargetOptions } from "@/lib/validations"
+import { strategyFormSchema, type StrategyFormData, salesTargetOptions, englishSpeakerOptions } from "@/lib/validations"
 import { Loader2, CheckCircle } from "lucide-react"
 import { useRouter } from "next/navigation"
 
@@ -39,6 +39,7 @@ export function StrategyForm() {
       products: "",
       targetCountries: "",
       monthlySalesTarget: "",
+      hasEnglishSpeaker: "",
     },
   })
 
@@ -222,12 +223,39 @@ export function StrategyForm() {
               </FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="h-12">
+                  <SelectTrigger className="h-12 bg-white">
                     <SelectValue placeholder="Hedef satış miktarını seçin" />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
+                <SelectContent className="bg-white">
                   {salesTargetOptions.map((option) => (
+                    <SelectItem key={option.value} value={option.value}>
+                      {option.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="hasEnglishSpeaker"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-brand-charcoal">
+                Ekibinizde İngilizce konuşabilen kimse var mı? *
+              </FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger className="h-12 bg-white">
+                    <SelectValue placeholder="Evet/Hayır seçin" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent className="bg-white">
+                  {englishSpeakerOptions.map((option) => (
                     <SelectItem key={option.value} value={option.value}>
                       {option.label}
                     </SelectItem>

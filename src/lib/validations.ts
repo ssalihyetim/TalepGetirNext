@@ -8,6 +8,7 @@ export const strategyFormSchema = z.object({
   products: z.string().min(5, "Ürün açıklaması gerekli"),
   targetCountries: z.string().min(2, "Hedef ülkeler gerekli"),
   monthlySalesTarget: z.string().min(1, "Satış hedefi seçin"),
+  hasEnglishSpeaker: z.string().min(1, "Bu soruyu yanıtlamanız gerekiyor"),
 })
 
 export type StrategyFormData = z.infer<typeof strategyFormSchema>
@@ -18,4 +19,9 @@ export const salesTargetOptions = [
   { value: "100k-500k", label: "$100,000 - $500,000" },
   { value: "500k-1m", label: "$500,000 - $1,000,000" },
   { value: "1m+", label: "$1,000,000+" },
+]
+
+export const englishSpeakerOptions = [
+  { value: "yes", label: "Evet" },
+  { value: "no", label: "Hayır" },
 ]
