@@ -696,8 +696,8 @@ export default function HomePage() {
                     </div>
                     <h3 className="text-xl font-semibold mb-3 text-white">E-posta</h3>
                     <p className="text-white/90">
-                      <a href="mailto:john@rapidlanyard.com" className="hover:text-yellow-300 transition-colors">
-                        john@rapidlanyard.com
+                      <a href="mailto:salih@talepgetir.com" className="hover:text-yellow-300 transition-colors">
+                        salih@talepgetir.com
                       </a>
                     </p>
                     <p className="text-white/70 text-sm mt-2">

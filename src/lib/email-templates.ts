@@ -105,7 +105,7 @@ export function generateAdminNotificationEmail(formData: StrategyFormData): {
                 Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul
             </p>
             <p style="color: #94a3b8; margin: 5px 0; font-size: 12px;">
-                E-posta: john@rapidlanyard.com | Telefon: +90 532 663 83 79
+                E-posta: salih@talepgetir.com | Telefon: +90 532 663 83 79
             </p>
             <p style="color: #64748b; margin: 5px 0 0 0; font-size: 12px;">
                 Gönderim Zamanı: ${new Date().toLocaleString('tr-TR')}
@@ -136,8 +136,8 @@ ACİL: Bu strateji dosyası 72 saat içinde hazırlanması gerekiyor!
 Gönderim Zamanı: ${new Date().toLocaleString('tr-TR')}
 
 TalepGetir.com
-Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul
-E-posta: john@rapidlanyard.com | Telefon: +90 532 663 83 79
+Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul  
+E-posta: salih@talepgetir.com | Telefon: +90 532 663 83 79
   `
 
   return { subject, html, text }
@@ -325,7 +325,7 @@ export function generateUserConfirmationEmail(formData: StrategyFormData): {
                 Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul
             </p>
             <p style="color: #94a3b8; margin: 0 0 10px 0; font-size: 12px;">
-                E-posta: john@rapidlanyard.com | Telefon: +90 532 663 83 79
+                E-posta: salih@talepgetir.com | Telefon: +90 532 663 83 79
             </p>
             <p style="color: #64748b; margin: 0; font-size: 12px;">
                 Bu e-posta ${new Date().toLocaleString('tr-TR')} tarihinde gönderilmiştir.
@@ -380,7 +380,7 @@ SONRAKI ADIM:
 Sorularınız için:
 📞 Telefon: +90 532 663 83 79
 💬 WhatsApp: wa.me/905326638379
-📧 E-posta: john@rapidlanyard.com
+📧 E-posta: salih@talepgetir.com
 
 TalepGetir.com - Türk ihracatçılarının global pazarlardaki gücü
 Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul
