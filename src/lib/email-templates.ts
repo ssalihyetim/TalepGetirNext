@@ -101,6 +101,12 @@ export function generateAdminNotificationEmail(formData: StrategyFormData): {
             <p style="color: #94a3b8; margin: 0; font-size: 14px;">
                 TalepGetir.com - İhracat Lead Generation Platformu
             </p>
+            <p style="color: #94a3b8; margin: 5px 0; font-size: 12px;">
+                Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul
+            </p>
+            <p style="color: #94a3b8; margin: 5px 0; font-size: 12px;">
+                E-posta: john@rapidlanyard.com | Telefon: +90 532 663 83 79
+            </p>
             <p style="color: #64748b; margin: 5px 0 0 0; font-size: 12px;">
                 Gönderim Zamanı: ${new Date().toLocaleString('tr-TR')}
             </p>
@@ -128,7 +134,10 @@ ${formData.targetCountries}
 ACİL: Bu strateji dosyası 72 saat içinde hazırlanması gerekiyor!
 
 Gönderim Zamanı: ${new Date().toLocaleString('tr-TR')}
+
 TalepGetir.com
+Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul
+E-posta: john@rapidlanyard.com | Telefon: +90 532 663 83 79
   `
 
   return { subject, html, text }
@@ -312,6 +321,12 @@ export function generateUserConfirmationEmail(formData: StrategyFormData): {
             <p style="color: #94a3b8; margin: 0 0 10px 0; font-size: 14px;">
                 Türk ihracatçılarının global pazarlardaki gücü
             </p>
+            <p style="color: #94a3b8; margin: 0 0 8px 0; font-size: 12px;">
+                Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul
+            </p>
+            <p style="color: #94a3b8; margin: 0 0 10px 0; font-size: 12px;">
+                E-posta: john@rapidlanyard.com | Telefon: +90 532 663 83 79
+            </p>
             <p style="color: #64748b; margin: 0; font-size: 12px;">
                 Bu e-posta ${new Date().toLocaleString('tr-TR')} tarihinde gönderilmiştir.
             </p>
@@ -363,10 +378,12 @@ SONRAKI ADIM:
 72 saat içinde strateji dosyanız ${formData.email} adresine gönderilecek.
 
 Sorularınız için:
-📞 Telefon: +90 5XX XXX XX XX
-💬 WhatsApp: wa.me/905XXXXXXXXX
+📞 Telefon: +90 532 663 83 79
+💬 WhatsApp: wa.me/905326638379
+📧 E-posta: john@rapidlanyard.com
 
 TalepGetir.com - Türk ihracatçılarının global pazarlardaki gücü
+Topkapı Litros Yolu, Maltepe, Litros Çıkmazı No:5, 34010 Zeytinburnu/İstanbul
 Gönderim: ${new Date().toLocaleString('tr-TR')}
   `
 

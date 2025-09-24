@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { CheckCircle, Users, TrendingUp, Target, Clock, Star, Gift, Shield, Zap } from "lucide-react"
+import { CheckCircle, Users, TrendingUp, Target, Clock, Star, Gift, Shield, Zap, MapPin, Phone, Mail, MessageSquare } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/layout/header"
 import { CtaButton } from "@/components/ui/cta-button"
@@ -458,7 +458,7 @@ export default function HomePage() {
                   size="xxl"
                   variant="primary"
                   icon={<Gift className="w-8 h-8" />}
-                  className="bg-white text-red-600 hover:bg-gray-100 hover:scale-105 shadow-2xl"
+                  className="bg-red-600 text-white hover:bg-red-700 hover:scale-105 shadow-2xl"
                 >
                   ÜCRETSİZ STRATEJİ DOSYASI OLUŞTURALIM
                 </CtaButton>
@@ -633,6 +633,100 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="iletisim" className="py-16 lg:py-24 bg-brand-blue text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <ScrollReveal delay={0.1}>
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+                  İletişim Bilgilerimiz
+                </h2>
+                <p className="text-xl text-white/90 max-w-3xl mx-auto">
+                  Sorularınız için bize ulaşabilir, hemen görüşme planlayabilirsiniz.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <ScrollReveal delay={0.2}>
+                <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 text-center">
+                  <CardContent>
+                    <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                      <MapPin className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 text-white">Adresimiz</h3>
+                    <p className="text-white/90">
+                      Topkapı Litros Yolu, Maltepe,<br />
+                      Litros Çıkmazı No:5,<br />
+                      34010 Zeytinburnu/İstanbul
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.4}>
+                <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 text-center">
+                  <CardContent>
+                    <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                      <Phone className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 text-white">Telefon</h3>
+                    <p className="text-white/90">
+                      <a href="tel:+905326638379" className="hover:text-yellow-300 transition-colors">
+                        +90 532 663 83 79
+                      </a>
+                    </p>
+                    <p className="text-white/70 text-sm mt-2">
+                      Pazartesi - Cuma: 09:00 - 18:00
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.6}>
+                <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 text-center">
+                  <CardContent>
+                    <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                      <Mail className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 text-white">E-posta</h3>
+                    <p className="text-white/90">
+                      <a href="mailto:john@rapidlanyard.com" className="hover:text-yellow-300 transition-colors">
+                        john@rapidlanyard.com
+                      </a>
+                    </p>
+                    <p className="text-white/70 text-sm mt-2">
+                      24 saat içinde yanıt alın
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+            </div>
+
+            <ScrollReveal delay={0.8}>
+              <div className="text-center mt-12">
+                <h3 className="text-2xl font-bold mb-6 text-white">Hemen İletişime Geçin</h3>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="https://wa.me/905326638379" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+                      <MessageSquare className="w-5 h-5 mr-2" />
+                      WhatsApp ile Mesaj At
+                    </Button>
+                  </a>
+                  <a href="tel:+905326638379">
+                    <Button size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Hemen Ara
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
